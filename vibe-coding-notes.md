@@ -24,7 +24,7 @@ Absolute Mode
 
 ## MCP(Model Context Protocal)
 
-``` plain
+```plain
 claude mcp add -s user context7 -- npx -y @upstash/context7-mcp --api-key ctx7sk-8033be31-xxxx-xxxx-xxxx-539eeeba0170
 
 claude mcp add -s user --transport http exa https://mcp.exa.ai/mcp?exaApiKey=bcdeafb9-xxxx-xxxx-xxxx-ea3878fd3070
@@ -34,6 +34,8 @@ claude mcp add -s user --transport http Ref https://api.ref.tools/mcp --header "
 claude mcp add -s user firecrawl -e FIRECRAWL_API_KEY=fc-b003201c9cf44fb4aa7accf5xxxxxxxx -- npx -y firecrawl-mcp
 
 claude mcp add -s user sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
+
+claude mcp add -s user playwright -- npx -y @playwright/mcp@latest
 ```
 
 ## Agent Skills
@@ -62,8 +64,8 @@ npx skills add [--yes] [--global] vercel-labs/agent-skills
 
 UI/UX  
 [https://github.com/nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)  
-uipro init --ai claude      # Claude Code  
-uipro init --ai codex       # Codex
+uipro init --ai claude # Claude Code  
+uipro init --ai codex # Codex
 
 Superpowers  
 [https://github.com/obra/superpowers](https://github.com/obra/superpowers)
