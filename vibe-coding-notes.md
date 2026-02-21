@@ -24,18 +24,39 @@ Absolute Mode
 
 ## MCP(Model Context Protocal)
 
+### claude code
+
 ```plain
+claude mcp add -s user sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
+
+claude mcp add -s user --transport http Ref https://api.ref.tools/mcp --header "x-ref-api-key: ref-a8680bfe2f7exxxxxxxx"
+
 claude mcp add -s user context7 -- npx -y @upstash/context7-mcp --api-key ctx7sk-8033be31-xxxx-xxxx-xxxx-539eeeba0170
 
 claude mcp add -s user --transport http exa https://mcp.exa.ai/mcp?exaApiKey=bcdeafb9-xxxx-xxxx-xxxx-ea3878fd3070
 
-claude mcp add -s user --transport http Ref https://api.ref.tools/mcp --header "x-ref-api-key: ref-a8680bfe2f7exxxxxxxx"
-
 claude mcp add -s user firecrawl -e FIRECRAWL_API_KEY=fc-b003201c9cf44fb4aa7accf5xxxxxxxx -- npx -y firecrawl-mcp
 
-claude mcp add -s user sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
-
 claude mcp add -s user playwright -- npx -y @playwright/mcp@latest
+```
+
+### codex
+
+```plain
+codex mcp add sequential-thinking npx -y @modelcontextprotocol/server-sequential-thinking
+
+[mcp_servers.Ref]
+url = "https://api.ref.tools/mcp?apiKey=ref-8cc387f20450xxxxxxxx"
+
+[mcp_servers.context7]
+url = "https://mcp.context7.com/mcp"
+http_headers = { "CONTEXT7_API_KEY" = "ctx7sk-9027ffce-954d-4f4f-a70f-xxxxxxxxxxxx" }
+
+codex mcp add exa --url https://mcp.exa.ai/mcp?exaApiKey=f3fd357a-633d-4fbf-822f-xxxxxxxxxxxx
+
+codex mcp add firecrawl --url https://mcp.firecrawl.dev/fc-f884e037cef2492e805ad3faxxxxxxxx/v2/mcp
+
+codex mcp add playwright npx "@playwright/mcp@latest"
 ```
 
 ## Agent Skills
