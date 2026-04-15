@@ -29,11 +29,11 @@ Absolute Mode
 ```plain
 claude mcp add -s user sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
 
-claude mcp add -s user --transport http Ref https://api.ref.tools/mcp --header "x-ref-api-key: ref-a8680bfe2f7exxxxxxxx"
-
 claude mcp add -s user context7 -- npx -y @upstash/context7-mcp --api-key ctx7sk-8033be31-xxxx-xxxx-xxxx-539eeeba0170
 
 claude mcp add -s user --transport http exa https://mcp.exa.ai/mcp?exaApiKey=bcdeafb9-xxxx-xxxx-xxxx-ea3878fd3070
+
+claude mcp add -s user --transport http Ref https://api.ref.tools/mcp --header "x-ref-api-key: ref-a8680bfe2f7exxxxxxxx"
 
 claude mcp add -s user firecrawl -e FIRECRAWL_API_KEY=fc-b003201c9cf44fb4aa7accf5xxxxxxxx -- npx -y firecrawl-mcp
 
@@ -96,8 +96,22 @@ Everything Claude Code
 
 ## Something Interesting and Useful
 
+ccusage - A CLI tool for analyzing Claude Code/Codex CLI usage from local JSONL files.  
+[https://ccusage.com/](https://ccusage.com/)  
+[https://github.com/ryoppippi/ccusage](https://github.com/ryoppippi/ccusage)
+
 ccstatusline - Customize your claude code statusline  
 [https://github.com/sirmalloc/ccstatusline](https://github.com/sirmalloc/ccstatusline)
 
+Claude HUD  
+[https://github.com/jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud)
+
 peon-ping - Stop babysitting your terminal  
-[https://www.peonping.com/](https://www.peonping.com/)
+[https://www.peonping.com/](https://www.peonping.com/)  
+[https://github.com/PeonPing/peon-ping](https://github.com/PeonPing/peon-ping)
+
+Claude Code Notifier - Never Miss a Prompt  
+[https://claudecodenotifier.com/](https://claudecodenotifier.com/)
+
+Vibe Island - Dynamic Island for Your AI Agents  
+[https://vibeisland.app/](https://vibeisland.app/)
