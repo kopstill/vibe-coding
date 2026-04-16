@@ -21,3 +21,4 @@ When writing or editing Markdown files, follow the [CommonMark](https://spec.com
 ## Workflow
 
 - Explain the plan and approach first, then execute after confirmation
+- Always ask for explicit confirmation before running `git commit` or `git push`
