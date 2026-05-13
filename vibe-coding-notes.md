@@ -22,20 +22,20 @@ Absolute Mode
 • Goal: restore independent, high-fidelity thinking.  
 • Outcome: model obsolescence via user self-sufficiency.
 
-## MCP(Model Context Protocal)
+## MCP(Model Context Protocol)
 
 ### claude code
 
 ```plain
 claude mcp add -s user sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking
 
-claude mcp add -s user context7 -- npx -y @upstash/context7-mcp --api-key ctx7sk-8033be31-xxxx-xxxx-xxxx-539eeeba0170
+claude mcp add -s user context7 -- npx -y @upstash/context7-mcp --api-key <CONTEXT7_API_KEY>
 
-claude mcp add -s user --transport http exa https://mcp.exa.ai/mcp?exaApiKey=bcdeafb9-xxxx-xxxx-xxxx-ea3878fd3070
+claude mcp add -s user --transport http exa https://mcp.exa.ai/mcp?exaApiKey=<EXA_API_KEY>
 
-claude mcp add -s user --transport http Ref https://api.ref.tools/mcp --header "x-ref-api-key: ref-a8680bfe2f7exxxxxxxx"
+claude mcp add -s user --transport http Ref https://api.ref.tools/mcp --header "x-ref-api-key: <REF_API_KEY>"
 
-claude mcp add -s user firecrawl -e FIRECRAWL_API_KEY=fc-b003201c9cf44fb4aa7accf5xxxxxxxx -- npx -y firecrawl-mcp
+claude mcp add -s user firecrawl -e FIRECRAWL_API_KEY=<FIRECRAWL_API_KEY> -- npx -y firecrawl-mcp
 
 claude mcp add -s user playwright -- npx -y @playwright/mcp@latest
 ```
@@ -46,15 +46,15 @@ claude mcp add -s user playwright -- npx -y @playwright/mcp@latest
 codex mcp add sequential-thinking npx -y @modelcontextprotocol/server-sequential-thinking
 
 [mcp_servers.Ref]
-url = "https://api.ref.tools/mcp?apiKey=ref-8cc387f20450xxxxxxxx"
+url = "https://api.ref.tools/mcp?apiKey=<REF_API_KEY>"
 
 [mcp_servers.context7]
 url = "https://mcp.context7.com/mcp"
-http_headers = { "CONTEXT7_API_KEY" = "ctx7sk-9027ffce-954d-4f4f-a70f-xxxxxxxxxxxx" }
+http_headers = { "CONTEXT7_API_KEY" = "<CONTEXT7_API_KEY>" }
 
-codex mcp add exa --url https://mcp.exa.ai/mcp?exaApiKey=f3fd357a-633d-4fbf-822f-xxxxxxxxxxxx
+codex mcp add exa --url https://mcp.exa.ai/mcp?exaApiKey=<EXA_API_KEY>
 
-codex mcp add firecrawl --url https://mcp.firecrawl.dev/fc-f884e037cef2492e805ad3faxxxxxxxx/v2/mcp
+codex mcp add firecrawl --url https://mcp.firecrawl.dev/<FIRECRAWL_API_KEY>/v2/mcp
 
 codex mcp add playwright npx "@playwright/mcp@latest"
 ```
@@ -69,6 +69,8 @@ npx skills list [-g]
 npx skills find [skill-name]  
 npx skills check  
 npx skills update
+
+fewer-permission-prompts
 
 Awesome agent skills  
 [https://github.com/ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)  
@@ -93,6 +95,12 @@ Superpowers
 
 Everything Claude Code  
 [https://github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+
+A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.  
+[https://github.com/multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+
+Intelligent automation and multi-agent orchestration for Claude Code  
+[https://github.com/wshobson/agents](https://github.com/wshobson/agents)
 
 ## Something Interesting and Useful
 
