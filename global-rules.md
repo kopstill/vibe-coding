@@ -18,6 +18,13 @@ When writing or editing Markdown files, follow the [CommonMark](https://spec.com
 - Communicate and respond in Chinese
 - Write all code comments in English
 
+## Skills
+
+- Before starting a non-trivial task, scan available skills and invoke any whose description matches the work — do not rely on memory alone.
+- Treat skill descriptions as triggers, not suggestions: if a skill clearly applies (e.g. planning, debugging, code review, verification, TDD), use it rather than improvising an equivalent.
+- Prefer an installed skill over an ad-hoc approach when both could work.
+- When unsure whether a skill applies, briefly check it rather than skip it.
+
 ## Workflow
 
 - Explain the plan and approach first, then execute after confirmation
