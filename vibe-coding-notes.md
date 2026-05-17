@@ -93,6 +93,9 @@ uipro init --ai codex # Codex
 Superpowers  
 [https://github.com/obra/superpowers](https://github.com/obra/superpowers)
 
+Planning with Files  
+[https://github.com/OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files)
+
 Everything Claude Code  
 [https://github.com/affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
 
