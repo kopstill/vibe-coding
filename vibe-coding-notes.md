@@ -105,6 +105,9 @@ A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Kar
 Intelligent automation and multi-agent orchestration for Claude Code  
 [https://github.com/wshobson/agents](https://github.com/wshobson/agents)
 
+Skills for Real Engineers.  
+[https://github.com/mattpocock/skills](https://github.com/mattpocock/skills)
+
 ## Something Interesting and Useful
 
 ccusage - A CLI tool for analyzing Claude Code/Codex CLI usage from local JSONL files.  
