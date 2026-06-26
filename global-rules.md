@@ -27,4 +27,5 @@ When writing or editing Markdown files, follow the [CommonMark](https://spec.com
 
 ## Workflow
 
-- Explain the plan and approach first, then execute after confirmation
+- For major decisions (irreversible actions, architecture or schema changes, multi-step refactors, anything affecting shared/production state), explain the plan first and execute only after confirmation
+- For small, routine, or easily-reversible tasks, just do them and report briefly — do not ask for confirmation on every minor step
