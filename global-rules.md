@@ -42,4 +42,4 @@ Facts that change how to work here — a tool being installed ≠ on PATH, so ve
 - `ls` (and `ll` / `la` / `l`) is aliased to eza, whose flags and output differ from macOS `/bin/ls`; avoid parsing listing output in scripts — prefer globs, `find`, or `stat`, or use `/bin/ls` (or `command ls` to bypass aliases) when BSD `ls` behavior is required.
 - `docker` / `docker-compose` are backed by OrbStack (not Docker Desktop); `kubectl` present.
 - Modern CLIs available, prefer when they fit: `rg` `fd` `bat` `delta` `jq` `yq` `fzf` `gh` `lazygit`.
-- Task-specific tools on hand: `ffmpeg` (audio/video), `hyperfine` (benchmarking), `mtr` / `nexttrace` (network path diagnostics), `stripe` (Stripe CLI — webhook listen/trigger), `flyctl` (Fly.io), `cloudflared` (tunnels).
+- Task-specific tools on hand: `ffmpeg` (audio/video), `hyperfine` (benchmarking), `mtr` / `nexttrace` (network path diagnostics), `stripe` (Stripe CLI — webhook listen/trigger), `flyctl` (Fly.io), `cloudflared` (tunnels), `openspec` (spec-driven development, npm global).
