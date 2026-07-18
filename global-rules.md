@@ -29,3 +29,12 @@ When writing or editing Markdown files, follow the [CommonMark](https://spec.com
 
 - For major decisions (irreversible actions, architecture or schema changes, multi-step refactors, anything affecting shared/production state), explain the plan first and execute only after confirmation
 - For small, routine, or easily-reversible tasks, just do them and report briefly — do not ask for confirmation on every minor step
+
+## Environment (this machine)
+
+Facts that change how to work here — a tool being installed ≠ on PATH, so verify with `command -v` before relying on it.
+
+- **Runtime setup**: Node / npm / pnpm / yarn via **fnm**, Java via **jenv** (these resolve only after shell init, not at fixed system paths); Go at `/usr/local/go`; Python 3 via Homebrew — use **uv** for envs/deps.
+- **Unprefixed `sort` / `date` / etc. are BSD** (macOS default); GNU coreutils are installed but only under `g`-prefixed names (e.g. `gsort`, `gdate`).
+- **`docker` / `docker-compose` are backed by OrbStack** (not Docker Desktop); `kubectl` present.
+- Modern CLIs available, prefer when they fit: `rg` `fd` `bat` `delta` `jq` `yq` `fzf` `gh` `lazygit`.
