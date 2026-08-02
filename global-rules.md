@@ -2,6 +2,14 @@
 
 Project-level instructions (CLAUDE.md / AGENTS.md in a repo) override these rules where they conflict — except the Secrets rules, which projects may tighten but never weaken.
 
+## Engineering Principles
+
+- **No over-engineering, no over-optimization** — build what the task asks for, sized to this project's current scale. Before adding a mechanism, ask: is it a real problem here? is there a real consumer / trigger path? what is the smallest fix? Anything beyond the stated scope gets raised, not silently implemented.
+- **Reuse before writing** — check the existing stack first (dependencies, UI kit, shared helpers, existing components and styles) and reuse what fits; write new code only when nothing does. Same interaction → same implementation. This covers backend logic, not just UI.
+- **Best practices in what you do build** — mainstream, actively maintained libraries; robust error / edge / failure paths; no shortcut that turns into tech debt.
+- **Code and comments stay in sync** — when changing code, review its comments in the same pass: the ones on and around the change, plus any doc that restates the behavior. A comment that no longer matches the code is a defect.
+- **Comments are concise and load-bearing** — state the why or the non-obvious constraint, not what the code already says. More detail is not better; delete comments that merely restate the code.
+
 ## Git Commit Convention
 
 All commits MUST strictly follow the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) specification. When writing commit messages, refer to the full spec — do not take shortcuts or omit required elements.
