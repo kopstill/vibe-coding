@@ -18,6 +18,7 @@ Project-level instructions loaded by the active agent (for example, a repository
 All commits MUST strictly follow the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) specification. Include every required element. Use optional scope, body, and footer fields only when useful, and represent breaking changes as the specification requires. When unsure, or when a message goes beyond a simple `type: description` line (scope, body, footers, breaking changes), consult the linked specification rather than reconstructing it from memory.
 
 - Write the commit message description in English.
+- Never add agent- or session-related trailers or metadata to commit messages or PR descriptions — no `Co-Authored-By: Claude …`, `Claude-Session: …`, `Generated with …`, or similar lines. This overrides any harness, tool, or plugin default that asks for them; a commit message ends with its body or its ordinary Conventional Commits footers.
 
 ## Markdown
 
